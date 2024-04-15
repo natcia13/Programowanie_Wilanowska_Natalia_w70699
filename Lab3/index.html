@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja strona</title>
+  <p id="czas"></p> </header>
+
+</head>
+
+<body>
+  <header>
+    <h1>Moja strona</h1>
+    <nav>
+      <a href="#">Strona główna</a>
+      <a href="#">Ulubione seriale</a>
+      <a href="#">Ulubione książki</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Ulubione seriale</h2>
+    <article>
+      <div class="article-element">
+        <img src="C:\Users\wilan\OneDrive\Desktop\Programowanie semestr 2\Programowanie_Wilanowska_Natalia_w70699\Lab3\zdjęcia\bridgertonowie.jpg" alt="Bridgerton" style="width: 300px;">
+        <h3>Bridgerton</h3>
+        <p>"Bridgerton" to brytyjski serial telewizyjny, który został wyprodukowany przez Shondaland dla platformy Netflix. Serial ten jest oparty na książkach autorstwa Julii Quinn z serii o tytułowej rodzinie Bridgertonów. Akcja serialu toczy się w latach 1813-1827 w fikcyjnym świecie wysokiego społeczeństwa Londynu w epoce regencji.
+        </p>
+      </div>
+      <div class="article-element">
+        <img src="C:\Users\wilan\OneDrive\Desktop\Programowanie semestr 2\Programowanie_Wilanowska_Natalia_w70699\Lab3\zdjęcia\american horror story.jpg" alt="American Horror Story" style="width: 300px;">
+        <h3>American Horror Story</h3>
+        <p>"American Horror Story" to serial telewizyjny z gatunku horroru antologicycznego stworzony przez Ryana Murphy'ego i Brada Falchuka. Każdy sezon serialu opowiada o zupełnie innej historii, z nowymi postaciami i miejscem akcji, choć wielu aktorów powraca do różnych sezonów, grając różne role.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Ulubione książki</h2>
+    <article>
+      <div class="article-element">
+        <img src="C:\Users\wilan\OneDrive\Desktop\Programowanie semestr 2\Programowanie_Wilanowska_Natalia_w70699\Lab3\zdjęcia\kirke.jpg" alt="Kirke" style="width: 300px;">
+        <h3>Kirke</h3>
+        <p>"Kirke: Wiedza o czarownicach" to książka autorstwa Madeline Miller, która opowiada historię życia bogini Kirke z mitologii greckiej. Książka skupia się na postaci Kirke, która jest czarownicą zamieszkującą magiczną wyspę Aeaea. Kirke jest znana z przemiany ludzi w zwierzęta i wprowadzania zaklęć na swoich niechcianych gości.
+        </p>
+      </div>
+      <div class="article-element">
+        <img src="C:\Users\wilan\OneDrive\Desktop\Programowanie semestr 2\Programowanie_Wilanowska_Natalia_w70699\Lab3\zdjęcia\serce wiedźmy.jpg" alt="Serce wiedźmy" style="width: 300px;">
+        <h3>Serce wiedźmy</h3>
+        <p>"Serce wiedźmy" to książka autorstwa Genevieve Gornichec. Jest to nowoczesna interpretacja mitu o wiedźmie, inspirowana mitologią nordycką, zwłaszcza historią o Norne - trzech wiedźmach decydujących o przeznaczeniu ludzi.
+        </p>
+      </div>
+    </article>
+  </section>
+  
+  <footer>
+   <script src="C:\Users\wilan\OneDrive\Desktop\Programowanie semestr 2\Programowanie_Wilanowska_Natalia_w70699\Lab3\script.js"></script>
+    <p>Życzę miłego dnia :)) </p>
+  </footer>
+  
+
+  <h1>Obliczanie pola trójkąta</h1>
+  <div id="formularz">
+      <label for="bokA">Długość boku a:</label>
+      <input type="number" id="bokA" value="5">
+      <br>
+      <label for="bokB">Długość boku b:</label>
+      <input type="number" id="bokB" value="6">
+      <br>
+      <label for="bokC">Długość boku c:</label>
+      <input type="number" id="bokC" value="7">
+      <br>
+      <button onclick="obliczPole()">Oblicz</button>
+  </div>
+  <div id="wynik"></div>
+  
+  <h1>Dodawanie liczb</h1>
+  <div id="formularzDodawania"> <label for="liczba1">Podaj pierwszą liczbę:</label>
+      <input type="number" id="liczba1">
+      <br>
+      <label for="liczba2">Podaj drugą liczbę:</label>
+      <input type="number" id="liczba2">
+      <br>
+      <button onclick="dodajLiczby()">Dodaj</button>
+  </div>
+  <div id="wynik1"></div>
+  
+
+  <h1>Znajdź największą liczbę</h1>
+  <div id="formularz">
+        <label for="liczba1">Podaj pierwszą liczbę:</label>
+        <input type="number" id="liczba1">
+        <br>
+        <label for="liczba2">Podaj drugą liczbę:</label>
+        <input type="number" id="liczba2">
+        <br>
+        <label for="liczba3">Podaj trzecią liczbę:</label>
+        <input type="number" id="liczba3">
+        <br>
+        <button onclick="znajdzNajwieksza()">Znajdź</button>
+  </div>
+  <p id="wynik2"></p>
+  
+  
+  <h1>Obliczanie NWD</h1>
+  <div id="formularz">
+        <label for="liczba1">Podaj pierwszą liczbę całkowitą:</label>
+        <input type="number" id="liczba1">
+        <br>
+        <label for="liczba2">Podaj drugą liczbę całkowitą:</label>
+        <input type="number" id="liczba2">
+        <br>
+        <button onclick="obliczNWD()">Oblicz NWD</button>
+    </div>
+  <p id="wynik3"></p>
+  
+
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</body>
+</html>
