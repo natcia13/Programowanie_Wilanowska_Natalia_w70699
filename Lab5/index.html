@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strona z zadankami</title>
+</head>
+
+<body>
+  <h1>Szukanie liczb</h1>
+  <div id="liczby"></div>
+  <br>
+  <input type="number" id="liczbaDoWpisania" placeholder="Podaj liczbę">
+  <button onclick="dodajLiczbe()">Dodaj</button>
+  <br>
+  <input type="number" id="liczbaDoSzukania" placeholder="Podaj liczbę do wyszukania">
+  <button onclick="szukajLiczby()">Szukaj</button>
+  <p id="wynik1"></p>
+
+
+  <h1>Wstawianie do tablicy</h1>
+  <p>Tablica początkowa: 1, 2, 3, 4, 5, 6</p>
+  <input type="number" id="indeks" placeholder="Podaj indeks (0-5)">
+  <input type="number" id="liczba" placeholder="Podaj liczbę do wstawienia">
+  <button onclick="wstawLiczbe()">Wstaw</button>
+  <p id="wynik"></p>
+
+
+  <h1>Odwracanie ciągu</h1>
+  <input type="text" id="ciagZnakow" placeholder="Podaj ciąg znaków">
+  <button onclick="odwrocCiag()">Odwróć</button>
+  <p id="wynik"></p>
+
+
+  <h1>Tablica z liczbami losowymi</h1>
+  <button onclick="wypelnijTablice()">Wypełnij Tablicę</button>
+  <ul id="listaLiczb"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
