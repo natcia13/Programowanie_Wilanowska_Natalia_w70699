@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<form id="myForm" method="post" action="#" novalidate>
+    <div class="form-group">
+        <label for="fname">Imię:</label>
+        <input type="text" id="fname" name="fname" required>
+        <div class="error-message" id="fname-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="lname">Nazwisko:</label>
+        <input type="text" id="lname" name="lname" required>
+        <div class="error-message" id="lname-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div class="error-message" id="email-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="password">Hasło (min. 8 znaków):</label>
+        <input type="password" id="password" name="password" required>
+        <div class="error-message" id="password-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="confirmPassword">Powtórz hasło:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <div class="error-message" id="confirmPassword-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="gender">Płeć:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Wybierz...</option>
+            <option value="male">Mężczyzna</option>
+            <option value="female">Kobieta</option>
+            <option value="other">Inna</option>
+        </select>
+        <div class="error-message" id="gender-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="phone">Telefon:</label>
+        <input type="text" id="phone" name="phone" required>
+        <div class="error-message" id="phone-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="birthdate">Data Urodzenia:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <div class="error-message" id="birthdate-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="country">Kraj:</label>
+        <input type="text" id="country" name="country" required>
+        <div class="error-message" id="country-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="province">Województwo:</label>
+        <select id="province" name="province" disabled>
+            <option value="">Wybierz...</option>
+        </select>
+        <div class="error-message" id="province-error"></div>
+    </div>
+    <div class="form-group">
+        <label for="address">Adres zamieszkania:</label>
+        <input type="text" id="address" name="address" disabled>
+        <div class="error-message" id="address-error"></div>
+    </div>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" id="sameAddress" name="sameAddress" checked>
+            Adres korespondencyjny taki sam jak adres zamieszkania
+        </label>
+    </div>
+    <div class="form-group" id="correspondingAddressGroup" style="display: none;">
+        <label for="correspondingAddress">Adres korespondencyjny:</label>
+        <input type="text" id="correspondingAddress" name="correspondingAddress">
+        <div class="error-message" id="correspondingAddress-error"></div>
+    </div>
+    <input type="submit" value="Zapisz">
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
